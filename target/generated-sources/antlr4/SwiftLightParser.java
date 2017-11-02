@@ -16,7 +16,8 @@ public class SwiftLightParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, T__1=2, T__2=3, ID=4, MUL=5, DIV=6, ADD=7, SUB=8, NEWLINE=9, INT=10;
+		T__0=1, T__1=2, T__2=3, ID=4, MUL=5, DIV=6, ADD=7, SUB=8, NEWLINE=9, INT=10, 
+		CHAR=11, STRING=12;
 	public static final int
 		RULE_stat = 0, RULE_expr = 1;
 	public static final String[] ruleNames = {
@@ -27,7 +28,8 @@ public class SwiftLightParser extends Parser {
 		null, "'='", "'('", "')'", null, "'*'", "'/'", "'+'", "'-'", "'\n'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, "ID", "MUL", "DIV", "ADD", "SUB", "NEWLINE", "INT"
+		null, null, null, null, "ID", "MUL", "DIV", "ADD", "SUB", "NEWLINE", "INT", 
+		"CHAR", "STRING"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -307,7 +309,7 @@ public class SwiftLightParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\f&\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16&\4\2\t\2\4\3\t"+
 		"\3\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2\20\n\2\3\3\3\3\3\3\3\3\3\3"+
 		"\3\3\3\3\5\3\31\n\3\3\3\3\3\3\3\3\3\3\3\3\3\7\3!\n\3\f\3\16\3$\13\3\3"+
 		"\3\2\3\4\4\2\4\2\4\4\2\7\7\t\t\4\2\b\b\n\n\2)\2\17\3\2\2\2\4\30\3\2\2"+

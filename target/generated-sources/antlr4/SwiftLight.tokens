@@ -8,6 +8,8 @@ ADD=7
 SUB=8
 NEWLINE=9
 INT=10
+CHAR=11
+STRING=12
 '='=1
 '('=2
 ')'=3
