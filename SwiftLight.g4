@@ -29,9 +29,7 @@ CHAR:  ('a'|'b'|'c'|'d'|'e'|'f'|'g'|'h'|'i'|'j'|'k'|'l'|'m'|'n'|'o'|'p'|'r'|'s'|
 
 STRING : (INT | CHAR ) INT (INT | CHAR)  | (INT | CHAR ) CHAR (INT | CHAR) ;
 
-SIGN : '-';
-
-DOUBLE : (SIGN) INT DEC INT;
-
 DEC : '.';
+
+DOUBLE : (SUB) INT DEC INT;
 
